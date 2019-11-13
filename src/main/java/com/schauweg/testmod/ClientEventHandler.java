@@ -15,7 +15,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class ClientEventHandler {
 	
-	TestDialog td;
+	TrackerWindow trackerWindow;
 	EntityPlayer clientPlayer;
 	List<PlayerListObject> players;
 	
@@ -47,7 +47,7 @@ public class ClientEventHandler {
 	
 	@SubscribeEvent
 	public void onClientTick(TickEvent.ClientTickEvent event) {
-	    if (event.phase == TickEvent.Phase.END && players != null && td != null && clientPlayer != null) {
+	    if (event.phase == TickEvent.Phase.END && players != null && trackerWindow != null && clientPlayer != null) {
 	    	for(int i = 0; i < players.size(); i++) {
 				PlayerListObject plo = players.get(i);
 				if(!plo.isChecked()) {
@@ -56,20 +56,20 @@ public class ClientEventHandler {
 					plo.setChecked(false);
 				}
 			}
-			td.updatePlayer(players, clientPlayer);
+			trackerWindow.updatePlayer(players, clientPlayer);
 	    }
 	}
 	
 	@SubscribeEvent
 	public void onConnect(FMLNetworkEvent.ClientConnectedToServerEvent event) {
 		players = new ArrayList<PlayerListObject>();
-		td = new TestDialog();
-		td.setVisible(true);
+		trackerWindow = new TrackerWindow();
+		trackerWindow.setVisible(true);
 	}
 
 	@SubscribeEvent
 	public void onDisconnect(FMLNetworkEvent.ClientDisconnectionFromServerEvent event) {
-		td.dispose();
+		trackerWindow.dispose();
 		players = null;
 		clientPlayer = null;
 	}

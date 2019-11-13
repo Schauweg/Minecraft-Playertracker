@@ -17,14 +17,14 @@ import java.text.DecimalFormat;
 import javax.swing.JScrollPane;
 import javax.swing.JCheckBox;
 
-public class TestDialog extends JFrame {
+public class TrackerWindow extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JScrollPane scrollPane;
 	private JCheckBox chckbxRelativeCoords;
 	private GridBagConstraints gbc_chckbxRelativeCoords;
 	
-	public TestDialog() {
+	public TrackerWindow() {
 		setAlwaysOnTop(true);
 		setType(Type.UTILITY);
 		setAutoRequestFocus(false);
