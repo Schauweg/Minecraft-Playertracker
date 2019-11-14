@@ -1,6 +1,6 @@
-package com.schauweg.testmod.proxy;
+package com.schauweg.playertracker.proxy;
 
-import com.schauweg.testmod.ClientEventHandler;
+import com.schauweg.playertracker.ClientEventHandler;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

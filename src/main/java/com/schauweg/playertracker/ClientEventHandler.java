@@ -1,4 +1,4 @@
-package com.schauweg.testmod;
+package com.schauweg.playertracker;
 
 import java.util.ArrayList;
 import java.util.List;

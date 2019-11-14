@@ -1,4 +1,4 @@
-package com.schauweg.testmod.proxy;
+package com.schauweg.playertracker.proxy;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;

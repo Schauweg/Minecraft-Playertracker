@@ -1,4 +1,4 @@
-package com.schauweg.testmod;
+package com.schauweg.playertracker;
 
 import net.minecraft.entity.player.EntityPlayer;
 

@@ -1,8 +1,8 @@
-package com.schauweg.testmod;
+package com.schauweg.playertracker;
 
 import org.apache.logging.log4j.Logger;
 
-import com.schauweg.testmod.proxy.CommonProxy;
+import com.schauweg.playertracker.proxy.CommonProxy;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
